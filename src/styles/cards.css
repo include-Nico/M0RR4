@@ -1,0 +1,98 @@
+#inventory-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 140px;
+  height: 200px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  border: 3px solid transparent;
+  user-select: none;
+}
+
+.card:active {
+  transform: scale(0.95);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.card-energy {
+  background-color: #333;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-art {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+}
+
+.card-name {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin: 4px 0;
+  text-transform: uppercase;
+}
+
+.card-ability {
+  font-size: 0.65rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  padding: 4px;
+  min-height: 35px;
+}
+
+/* Colori Rarità */
+.common {
+  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  border-color: #9e9e9e;
+}
+.rare {
+  background: linear-gradient(135deg, #e3f2fd, #90caf9);
+  border-color: #2196f3;
+  box-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
+}
+.epic {
+  background: linear-gradient(135deg, #f3e5f5, #ce93d8);
+  border-color: #9c27b0;
+  box-shadow: 0 0 15px rgba(156, 39, 176, 0.4);
+}
+.legendary {
+  background: linear-gradient(135deg, #fff8e1, #ffecb3);
+  border-color: #ffc107;
+  box-shadow: 0 0 20px rgba(255, 193, 7, 0.6);
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 10px #ffc107; }
+  to { box-shadow: 0 0 25px #ffb300; }
+}
