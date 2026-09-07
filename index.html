@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RPS Plus PWA</title>
   
-  <!-- Reset CSS base e stili della pagina -->
+  <!-- Fix per l'errore del favicon 404 -->
+  <link rel="icon" href="data:,">
+  
   <style>
     body {
       margin: 0;
@@ -19,15 +21,15 @@
     }
   </style>
 
-  <!-- CSS delle Carte -->
-  <link rel="stylesheet" href="../src/styles/cards.css">
+  <!-- Percorso aggiornato con ./src/ per Vercel -->
+  <link rel="stylesheet" href="./src/styles/cards.css">
 </head>
 <body>
   
   <h1>Il Mio Inventario</h1>
   <div id="inventory-grid"></div>
 
-  <!-- Script Principale (necessita di un server locale, es. Live Server) -->
-  <script type="module" src="../src/main.js"></script>
+  <!-- Percorso aggiornato con ./src/ per Vercel -->
+  <script type="module" src="./src/main.js"></script>
 </body>
 </html>
