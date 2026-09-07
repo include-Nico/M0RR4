@@ -13,7 +13,7 @@ export const cardsDatabase = [
   { id: 1, name: "Forbice", classId: 0, rarity: "common", energy: 1, emoji: "✂️", ability: null },
   { id: 2, name: "Coltello", classId: 0, rarity: "rare", energy: 2, emoji: "🔪", ability: null },
   { id: 3, name: "Spada", classId: 0, rarity: "epic", energy: 4, emoji: "🗡️", ability: null },
-  { id: 4, name: "Excalibur", classId: 0, rarity: "legendary", energy: 7, emoji: "⚔️", ability: "Critico: 50% di danni extra se vince." },
+  { id: 4, name: "Excalibur", classId: 0, rarity: "legendary", energy: 7, emoji: "🗡️✨", ability: "Critico: 50% di danni extra se vince." },
 
   // --- CLASSE 1: NATURA ---
   { id: 5, name: "Lucertola", classId: 1, rarity: "common", energy: 1, emoji: "🦎", ability: null },
